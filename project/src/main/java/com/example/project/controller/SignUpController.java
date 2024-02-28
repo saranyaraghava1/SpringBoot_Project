@@ -1,5 +1,7 @@
 package com.example.project.controller;
 
+import java.util.List;
+
 // import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,10 +33,10 @@ public class SignUpController {
         return obj.find(id);
     }
 
-    // @GetMapping("/all")
-    // public List<SignUp> findA() {
-    // return obj.findA();
-    // }
+    @GetMapping("/all")
+    public List<SignUp> findA() {
+        return obj.findA();
+    }
 
     @PutMapping("/update/{id}")
     public SignUp update(@PathVariable int id, @RequestBody SignUp u) {
