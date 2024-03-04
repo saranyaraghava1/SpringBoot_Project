@@ -19,7 +19,6 @@ public class SignUp {
 
     public SignUp() {
     }
-
     public SignUp(int id, String name, String password, String email) {
         this.id = id;
         this.name = name;

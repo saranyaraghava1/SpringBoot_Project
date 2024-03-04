@@ -2,7 +2,8 @@ package com.example.project.controller;
 
 import java.util.List;
 import org.springframework.data.domain.Page;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 // import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,6 +29,18 @@ public class SignUpController {
     @PostMapping("/create")
     public ResponseEntity<SignUp> insert(@RequestBody SignUp j) {
         return new ResponseEntity<>(obj.create(j), HttpStatus.OK);
+    }
+
+    public static final Logger logger = LoggerFactory.getLogger(SignUpController.class);
+
+    @RequestMapping("/api")
+    public String message() {
+
+        logger.info("INFO enabled");
+        logger.error("Error Enabled");
+        logger.debug("Debug Enabled");
+
+        return "Test Logging";
     }
 
     @GetMapping("/{id}")

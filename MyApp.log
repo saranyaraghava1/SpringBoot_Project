@@ -1,0 +1,34 @@
+2024-03-04 11:25:55,791 [restartedMain] INFO  com.example.project.ProjectApplication             - Starting ProjectApplication using Java 17.0.10 with PID 15616 (C:\Users\welcome\Downloads\project\project\target\classes started by welcome in C:\Users\welcome\Downloads\project)
+2024-03-04 11:25:55,802 [restartedMain] DEBUG com.example.project.ProjectApplication             - Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-03-04 11:25:55,802 [restartedMain] INFO  com.example.project.ProjectApplication             - No active profile set, falling back to 1 default profile: "default"
+2024-03-04 11:25:56,035 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-04 11:25:56,038 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-04 11:25:58,257 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-04 11:25:58,412 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 123 ms. Found 1 JPA repository interface.
+2024-03-04 11:26:00,163 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port 8080 (http)
+2024-03-04 11:26:00,215 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-04 11:26:00,224 [restartedMain] INFO  o.apache.catalina.core.StandardService             - Starting service [Tomcat]
+2024-03-04 11:26:00,227 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-03-04 11:26:00,415 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2024-03-04 11:26:00,417 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 4377 ms
+2024-03-04 11:26:00,790 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-04 11:26:00,976 [restartedMain] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-04 11:26:01,098 [restartedMain] INFO  o.h.c.internal.RegionFactoryInitiator              - HHH000026: Second-level cache disabled
+2024-03-04 11:26:01,648 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-04 11:26:01,698 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2024-03-04 11:26:02,279 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d372fdc
+2024-03-04 11:26:02,282 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2024-03-04 11:26:04,308 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-04 11:26:04,412 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-04 11:26:05,492 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 11:26:06,407 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2024-03-04 11:26:06,462 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2024-03-04 11:26:06,515 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port 8080 (http) with context path ''
+2024-03-04 11:26:06,540 [restartedMain] INFO  com.example.project.ProjectApplication             - Started ProjectApplication in 12.039 seconds (process running for 13.674)
+2024-03-04 11:26:29,094 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-04 11:26:29,097 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2024-03-04 11:26:29,103 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 5 ms
+2024-03-04 11:26:29,247 [http-nio-8080-exec-1] INFO  c.e.project.controller.SignUpController            - INFO enabled
+2024-03-04 11:26:29,252 [http-nio-8080-exec-1] ERROR c.e.project.controller.SignUpController            - Error Enabled
+2024-03-04 11:26:29,266 [http-nio-8080-exec-1] DEBUG c.e.project.controller.SignUpController            - Debug Enabled
+2024-03-04 11:26:29,539 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "favicon.ico"]
