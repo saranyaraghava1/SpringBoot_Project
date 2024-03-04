@@ -17,16 +17,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.example.project.model.SignUp;
 import com.example.project.service.SignUpService;
-
 @RestController
 public class SignUpController {
     @Autowired
     SignUpService obj;
 
-    @PostMapping("/create")
+@PostMapping("/create")
     public ResponseEntity<SignUp> insert(@RequestBody SignUp j) {
         return new ResponseEntity<>(obj.create(j), HttpStatus.OK);
     }
